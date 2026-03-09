@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantasyEdge AI — Your AI Fantasy Football Co-Manager</title>
+    <meta name="description" content="AI-powered Sleeper Fantasy Football assistant. Analyzes trades, recommends waivers, predicts matchups — 24/7. Connect your Sleeper league and dominate.">
+    <meta name="keywords" content="fantasy football, AI, Sleeper, trade analyzer, waiver wire, start sit, dynasty, redraft">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FantasyEdge AI — Your AI Fantasy Football Co-Manager">
+    <meta property="og:description" content="Connects to your Sleeper league. Analyzes trades, recommends waivers, predicts matchups — 24/7.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fantasyedge.ai">
+    <meta property="og:image" content="https://fantasyedge.ai/assets/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FantasyEdge AI — Your AI Fantasy Football Co-Manager">
+    <meta name="twitter:description" content="Connects to your Sleeper league. Analyzes trades, recommends waivers, predicts matchups — 24/7.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🏈</span>
+                <span class="logo-text">FantasyEdge <span class="logo-ai">AI</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#pricing" class="nav-cta">Get Started</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Now supporting 2026 NFL season
+            </div>
+            <h1 class="hero-title animate-in">
+                Your AI Fantasy Football<br><span class="gradient-text">Co-Manager</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Connects to your Sleeper league. Analyzes trades, recommends waivers, predicts matchups — 24/7.
+            </p>
+            <div class="hero-ctas animate-in">
+                <a href="#pricing" class="btn btn-primary btn-lg">
+                    Get Started Free
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#pricing" class="btn btn-ghost btn-lg">See Pricing</a>
+            </div>
+            <div class="hero-social-proof animate-in">
+                <div class="avatar-stack">
+                    <div class="avatar" style="background: linear-gradient(135deg, #00d4ff, #0066ff);">B</div>
+                    <div class="avatar" style="background: linear-gradient(135deg, #00ff88, #00b355);">M</div>
+                    <div class="avatar" style="background: linear-gradient(135deg, #ff4444, #cc0000);">J</div>
+                    <div class="avatar" style="background: linear-gradient(135deg, #ffaa00, #ff6600);">K</div>
+                </div>
+                <span class="social-proof-text">Join thousands of managers gaining an edge</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Three steps to <span class="gradient-text">domination</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card animate-in">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">🔗</div>
+                    <h3>Connect Your League</h3>
+                    <p>Enter your Sleeper username. That's it — no passwords, no permissions, no hassle.</p>
+                </div>
+                <div class="step-connector animate-in">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                        <path d="M0 12h36M28 4l8 8-8 8" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="step-card animate-in">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🧠</div>
+                    <h3>AI Analyzes Everything</h3>
+                    <p>Your league, roster, matchups, waivers, trade values — crunched by AI in seconds.</p>
+                </div>
+                <div class="step-connector animate-in">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                        <path d="M0 12h36M28 4l8 8-8 8" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="step-card animate-in">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🏆</div>
+                    <h3>Win Your League</h3>
+                    <p>Get alerts, recommendations, and an unfair advantage over every league mate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Features</span>
+                <h2 class="section-title">Everything you need to <span class="gradient-text">win</span></h2>
+                <p class="section-desc">Powered by AI that never sleeps, never tilts, and always knows the waiver wire.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Real-Time Waiver Alerts</h3>
+                    <p>Grab breakout players before your league mates wake up.</p>
+                    <span class="feature-tag tag-pro">Pro</span>
+                </div>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">📊</div>
+                    <h3>AI Trade Analyzer</h3>
+                    <p>Instant accept/reject verdicts with reasoning. Never lose a trade again.</p>
+                    <span class="feature-tag tag-pro">Pro</span>
+                </div>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Start/Sit Recommendations</h3>
+                    <p>Confidence-scored lineup advice every week. No more gut decisions.</p>
+                    <span class="feature-tag tag-pro">Pro</span>
+                </div>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">📈</div>
+                    <h3>Playoff Odds Simulator</h3>
+                    <p>Monte Carlo simulations of your path to the championship.</p>
+                    <span class="feature-tag tag-pro">Pro</span>
+                </div>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Power Rankings</h3>
+                    <p>Know exactly where you stand, updated weekly with deep analysis.</p>
+                    <span class="feature-tag tag-free">Free</span>
+                </div>
+                <div class="feature-card animate-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Draft Grades</h3>
+                    <p>Find out who got steals and who reached. Post-draft bragging rights included.</p>
+                    <span class="feature-tag tag-pro">Pro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Simple, <span class="gradient-text">transparent</span> pricing</h2>
+                <p class="section-desc">Start free. Upgrade when you're ready to dominate.</p>
+            </div>
+            <div class="pricing-toggle animate-in">
+                <span class="toggle-label" id="monthlyLabel">Monthly</span>
+                <button class="toggle-switch" id="pricingToggle" aria-label="Toggle pricing period">
+                    <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label" id="seasonLabel">Season</span>
+                <span class="toggle-badge">Save 42%</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card animate-in">
+                    <div class="pricing-card-header">
+                        <h3>Free</h3>
+                        <div class="pricing-amount">
+                            <span class="price">$0</span>
+                            <span class="period">forever</span>
+                        </div>
+                        <p class="pricing-desc">Get started with the basics</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> League overview & standings</li>
+                        <li><span class="check">✓</span> Basic roster analysis</li>
+                        <li><span class="check">✓</span> Power rankings</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Start Free</a>
+                </div>
+                <div class="pricing-card pricing-card-pro animate-in">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-card-header">
+                        <h3>Pro</h3>
+                        <div class="pricing-amount">
+                            <span class="price" id="proPrice">$7</span>
+                            <span class="period" id="proPeriod">/month</span>
+                        </div>
+                        <p class="pricing-desc">Everything you need to win</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Everything in Free</li>
+                        <li><span class="check check-pro">✓</span> Real-time waiver wire alerts</li>
+                        <li><span class="check check-pro">✓</span> AI trade analyzer (unlimited)</li>
+                        <li><span class="check check-pro">✓</span> Weekly start/sit recommendations</li>
+                        <li><span class="check check-pro">✓</span> Playoff odds simulator</li>
+                        <li><span class="check check-pro">✓</span> Draft assistant</li>
+                        <li><span class="check check-pro">✓</span> Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Go Pro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Stats -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-header animate-in">
+                <h2 class="section-title">Built by fantasy football degenerates,<br>powered by <span class="gradient-text">AI</span></h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card animate-in">
+                    <div class="stat-number" data-target="11546">0</div>
+                    <div class="stat-label">NFL players tracked</div>
+                </div>
+                <div class="stat-card animate-in">
+                    <div class="stat-number stat-text">Every</div>
+                    <div class="stat-label">Sleeper league supported</div>
+                </div>
+                <div class="stat-card animate-in">
+                    <div class="stat-number stat-text">24/7</div>
+                    <div class="stat-label">Monitoring & alerts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Got <span class="gradient-text">questions?</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How does it connect to my Sleeper league?</span>
+                        <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Just enter your Sleeper username — no password needed. We use Sleeper's public API to pull your league data. It takes about 10 seconds.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Will this get me banned from Sleeper?</span>
+                        <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. We only use read-only public data. We never write to your account, send messages, or make roster changes. Completely safe.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Does it work for dynasty leagues?</span>
+                        <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Dynasty, redraft, keeper — all supported. Our AI adjusts its analysis based on your league type and scoring settings.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>When does the 2026 season start?</span>
+                        <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>NFL season starts September 2026. Get set up now to be ready for draft season — our draft assistant and pre-season rankings are already live.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I cancel anytime?</span>
+                        <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, cancel anytime. No contracts, no cancellation fees. Your Pro features stay active until the end of your billing period.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is my data safe?</span>
+                        <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We only access your public Sleeper data. No passwords, no personal info stored. Your data is encrypted in transit and at rest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container animate-in">
+            <h2>Ready to get an <span class="gradient-text">unfair advantage?</span></h2>
+            <p>Join now and be ready when the 2026 season kicks off.</p>
+            <a href="#pricing" class="btn btn-primary btn-lg">
+                Get Started Free
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">🏈</span>
+                        <span class="logo-text">FantasyEdge <span class="logo-ai">AI</span></span>
+                    </a>
+                    <p>Built with 🤖 by FantasyEdge AI</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="mailto:support@fantasyedge.ai">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Social</h4>
+                    <a href="https://x.com/fantasyedgeai" target="_blank" rel="noopener">Twitter / X</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FantasyEdge AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

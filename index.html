@@ -323,6 +323,32 @@
         </div>
     </section>
 
+    <!-- Sign Up Modal -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 style="margin-bottom: 8px;">Get Started with <span class="gradient-text">FantasyEdge AI</span></h2>
+            <p style="color: #8a8f98; margin-bottom: 24px;">Enter your details to unlock all Pro features — free during beta.</p>
+            <form id="signupForm" action="https://formspree.io/f/placeholder" method="POST">
+                <div style="margin-bottom: 16px;">
+                    <label style="display:block; color: #ccc; font-size: 14px; margin-bottom: 6px;">Email</label>
+                    <input type="email" name="email" required placeholder="you@email.com" style="width:100%; padding: 12px 16px; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #fff; font-size: 16px; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#00d4ff'" onblur="this.style.borderColor='#2a2a3e'">
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <label style="display:block; color: #ccc; font-size: 14px; margin-bottom: 6px;">Sleeper Username</label>
+                    <input type="text" name="sleeper_username" required placeholder="Your Sleeper username" style="width:100%; padding: 12px 16px; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #fff; font-size: 16px; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#00d4ff'" onblur="this.style.borderColor='#2a2a3e'">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" style="width:100%; padding: 14px; font-size: 16px; cursor: pointer;">🏈 Unlock Pro Features</button>
+                <p style="color: #555; font-size: 12px; text-align: center; margin-top: 12px;">No password needed. We only use Sleeper's public API.</p>
+            </form>
+            <div id="signupSuccess" style="display:none; text-align:center; padding: 40px 0;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🏆</div>
+                <h3 style="color: #00ff88; margin-bottom: 8px;">You're in!</h3>
+                <p style="color: #8a8f98;">We'll email you when your dashboard is ready. Welcome to the edge.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container animate-in">

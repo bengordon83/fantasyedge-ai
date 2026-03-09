@@ -997,3 +997,40 @@ img { max-width: 100%; }
     .stat-number { font-size: 2.5rem; }
     .stat-text { font-size: 2rem; }
 }
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.modal-overlay.active {
+    display: flex;
+}
+.modal-content {
+    background: #12121a;
+    border: 1px solid #2a2a3e;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 440px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0,212,255,0.1);
+}
+.modal-close {
+    position: absolute;
+    top: 16px; right: 20px;
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.modal-close:hover { color: #fff; }

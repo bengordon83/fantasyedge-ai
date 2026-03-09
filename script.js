@@ -171,3 +171,54 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// Sign-up Modal
+const modal = document.getElementById('signupModal');
+const modalClose = document.getElementById('modalClose');
+const signupForm = document.getElementById('signupForm');
+const signupSuccess = document.getElementById('signupSuccess');
+
+// Open modal from any CTA button
+document.querySelectorAll('.btn-primary, .btn-outline').forEach(btn => {
+    if (btn.closest('.modal-content')) return; // skip modal's own button
+    btn.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#' || this.getAttribute('href') === '#pricing') {
+            e.preventDefault();
+            modal.classList.add('active');
+        }
+    });
+});
+
+// Close modal
+if (modalClose) modalClose.addEventListener('click', () => modal.classList.remove('active'));
+if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
+
+// Handle form submit
+if (signupForm) {
+    signupForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        
+        // Store locally
+        const signups = JSON.parse(localStorage.getItem('fantasyedge_signups') || '[]');
+        signups.push({ ...data, timestamp: new Date().toISOString() });
+        localStorage.setItem('fantasyedge_signups', JSON.stringify(signups));
+        
+        // Try Formspree if configured
+        const action = this.getAttribute('action');
+        if (action && !action.includes('placeholder')) {
+            fetch(action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } }).catch(() => {});
+        }
+        
+        // Show success
+        signupForm.style.display = 'none';
+        signupSuccess.style.display = 'block';
+        
+        setTimeout(() => {
+            modal.classList.remove('active');
+            signupForm.style.display = 'block';
+            signupSuccess.style.display = 'none';
+        }, 3000);
+    });
+}
